@@ -27,6 +27,14 @@ services:
     ports:
       - "8000:80"
 
+  fileshare:
+    image: nginx:mainline-alpine
+    build: ./nginx
+    ports:
+      - 8099:8080
+    volumes:
+      - ./nginx:/usr/share/nginx:ro
+
 volumes:
   import: {}
   files: {}

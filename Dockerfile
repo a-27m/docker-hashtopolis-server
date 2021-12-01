@@ -1,5 +1,4 @@
-FROM ubuntu:18.04
-MAINTAINER Kenneth Peiruza <kenneth@floss.cat>
+FROM ubuntu:21.10
 
 RUN	export DEBIAN_FRONTEND=noninteractive && \
 	apt update && \
